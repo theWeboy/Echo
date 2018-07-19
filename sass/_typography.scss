@@ -1,0 +1,41 @@
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  //line-height: 1.7;
+  color: $color-text-primary;
+
+}
+
+.heading-1{
+  font-size: 7rem;
+  font-weight: 900;
+  backface-visibility: hidden;
+}
+
+.heading-3{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: .7rem;
+}
+
+.heading-4{
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  &__default{
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__current_song{
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+
+  &__next_song{
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+
+}

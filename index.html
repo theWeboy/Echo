@@ -20,9 +20,10 @@
                 </nav>
                 <div class="head">
                     <h1 class="heading-1">Echo.</h1>
-                    <h3 class="heading-3" style="margin-bottom: 3rem">Your own music player</h3>
+                    <h3 class="heading-3">Your own music player</h3>
+
                     <h4 class="heading-4 heading-4__default">Click on the player to start!</h4>
-                    <h4 class="heading-4 heading-4__current">Now Playing - <span class="current_song"></span></h4>
+                    <h4 class="heading-4 heading-4__current">Now Playing - <span class="heading-4__current_song current_song"></span></h4>
 
                 </div>
             </header>
@@ -36,19 +37,19 @@
                         <div class="play-sprite"></div>
                     </div>
 
-                    <audio data-bpm="98" data-name="Unforgettable - French Montana">
+                    <audio data-bpm="98" data-name="Unforgettable by French Montana">
                         <source src="songs/unforgettable.mpeg" type="audio/mp3" />
                     </audio>
-                    <audio data-bpm="102" id="1" data-name="Feels - Calvin Harris">
+                    <audio data-bpm="102" id="1" data-name="Feels by Calvin Harris">
                         <source src="songs/feels.mpeg" type="audio/mp3" />
                     </audio>
-                    <audio data-bpm="112" id="2" data-name="PassionFruit - Drake">
+                    <audio data-bpm="112" id="2" data-name="PassionFruit by Drake">
                         <source src="songs/passion_fruit.mpeg" type="audio/mp3" />
                     </audio>
                     <audio data-bpm="129" id="3" data-name="Somebody that I used to know">
                         <source src="songs/gotye.mpeg" type="audio/mp3" />
                     </audio>
-                    <audio data-bpm="107" id="4" data-name="Nayan Tarse - DevD">
+                    <audio data-bpm="107" id="4" data-name="Nayan Tarse (DevD)">
                         <source src="songs/nayan_tarse.mpeg" type="audio/mp3" />
                     </audio>
 
@@ -58,13 +59,21 @@
 
             <div class="song">
                 <div class="details">
-                    <h4 class="heading-4 heading-4__next">Next up - <span class="next_song"></span></h4>
-                    <button class="btn-inline" id="btn-skip">Skip to next &raquo;</button>
+                    <h4 class="heading-4 heading-4__next">Next up - <span class="heading-4__next_song next_song"></span></h4>
+
+                    <button class="btn btn-inline" id="btn-skip">Skip to next >></button>
+
                 </div>
             </div>
 
             <footer class="footer">
-                <p class="copyright">
+                <div class="footer__heading">Made with &heartsuit; By
+                    <a class="footer__link" href="https://github.com/theWeboy" target="_blank">
+                        Deepak Bansal
+                    </a>
+                </div>
+                <br>
+                <p class="footer__copyright">
                     Echo &copy; 2018. All rights reserved.
                 </p>
             </footer>

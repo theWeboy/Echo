@@ -1,5 +1,5 @@
 .bg{
-  background-image: linear-gradient(to right bottom, rgba(255, 80, 70, 0.53),rgba(255, 128, 130, 0.57) );
+  background-image: linear-gradient(to right bottom, rgba(255, 80, 68, 0.4),rgba(255, 128, 130, 0.57) ),url("../img/default_bg.jpg");
   background-size: cover;
   background-position: top;
 
@@ -8,6 +8,12 @@
   justify-content: space-around;
 }
 
+.nav__logo{
+  margin-left: 1.8rem;
+  margin-top: 1.8rem;
+  font-size: 2rem;
+  font-weight:900;
+}
 .header{
   display: flex;
   flex-direction: column;
@@ -21,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 10vh;
+  height: 6vh;
 
   @media only screen and (max-width: $bp-small) {
     height: 13vh;
@@ -52,8 +58,8 @@
   //min-height: 12vh;
 
   @media only screen and (max-width: $bp-small) {
-    min-height: 12vh;
-    margin-top: 3rem;
+    min-height: 10vh;
+    margin-top: 2rem;
     padding-top: 3rem;
   }
 }
@@ -66,26 +72,58 @@
   justify-content: space-around;
 
   align-items: center;
-  min-height: 65vh;
+  min-height: 58vh;
   /*background-color: blue;*/
   text-align: center;
   position: relative;
   z-index: 10;
   padding-right: 29rem;
-  padding-left: 29rem;
+  padding-left: 27rem;
+
   //padding-top: 10rem;
   //padding-bottom: 10rem;
 
   @media only screen and (max-width: $bp-small) {
-    width: 100vw;
+    width: 98vw;
     overflow-x: hidden;
     min-height: 54vh;
   }
 }
 
 .footer{
+  border-top: solid 1.2px;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: flex-end;
   min-height: 8vh;
+
+  &__heading{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__link{
+    &:link, &:visited{
+      color: $color-secondary;
+      //background-color: $color-grey-dark-3;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .2s;
+    }
+
+    &:hover, &:active{
+      color: #ffb97e;
+      box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+  }
+
+  &__copyright{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: -3px;
+  }
+
 }

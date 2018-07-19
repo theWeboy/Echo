@@ -138,3 +138,43 @@
     transform: scale(1);
   }
 }
+
+.btn{
+  /* link is a special state of the selector when it is an anchor element */
+  &, &:link, &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: all 0.2s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    font-size: 1.2rem;
+    margin-top: .9rem;
+    margin-bottom: 1.5rem;
+    background-color: $color-secondary;
+    color: indianred;
+    font-weight: 700;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  }
+
+  /* When button is clicked*/
+  &:active {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+}

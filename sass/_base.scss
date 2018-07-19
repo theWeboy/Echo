@@ -2,9 +2,10 @@
 //Color Palette
 $color-primary: #ef9a9a;
 $color-primary-dark: #e57373;
-$color-secondary: #FDF2B9;
-$color-text-light: #FDF3F3;
-$color-text-dark: #ffd7d7;
+$color-secondary: #fdead1;
+$color-text-secondary: #FFCDB2;
+$color-text-primary: #fae9c7;
+$color-black: #000;
 
 //Breakpoints
 $bp-small: 37.5em;
@@ -30,7 +31,7 @@ html{
 body{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  line-height: 1.6;
+  line-height: 1.2;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
