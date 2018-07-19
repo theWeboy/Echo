@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Echo - Your Own Music Player</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Echo - Your Own Music Player</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-</body>
+        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <div class="bg default">
+            <header class="header">
+                <nav class="nav">
+                    <span class="nav__logo">Echo</span>
+                </nav>
+                <div class="head">
+                    <h1 class="heading-1">Echo.</h1>
+                    <h3 class="heading-3" style="margin-bottom: 3rem">Your own music player</h3>
+                    <h4 class="heading-4 heading-4__default">Click on the player to start!</h4>
+                    <h4 class="heading-4 heading-4__current">Now Playing - <span class="current_song"></span></h4>
+
+                </div>
+            </header>
+            <div class="container">
+                <canvas id="visualizer"></canvas>
+
+                <div class="player">
+                    <div class="spinner-wrap" id="0">
+                        <div class="spinner-outer"></div>
+                        <div class="spinner-center"></div>
+                        <div class="play-sprite"></div>
+                    </div>
+
+                    <audio data-bpm="98" data-name="Unforgettable - French Montana">
+                        <source src="songs/unforgettable.mpeg" type="audio/mp3" />
+                    </audio>
+                    <audio data-bpm="102" id="1" data-name="Feels - Calvin Harris">
+                        <source src="songs/feels.mpeg" type="audio/mp3" />
+                    </audio>
+                    <audio data-bpm="112" id="2" data-name="PassionFruit - Drake">
+                        <source src="songs/passion_fruit.mpeg" type="audio/mp3" />
+                    </audio>
+                    <audio data-bpm="129" id="3" data-name="Somebody that I used to know">
+                        <source src="songs/gotye.mpeg" type="audio/mp3" />
+                    </audio>
+                    <audio data-bpm="107" id="4" data-name="Nayan Tarse - DevD">
+                        <source src="songs/nayan_tarse.mpeg" type="audio/mp3" />
+                    </audio>
+
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="details">
+                    <h4 class="heading-4 heading-4__next">Next up - <span class="next_song"></span></h4>
+                    <button class="btn-inline" id="btn-skip">Skip to next &raquo;</button>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p class="copyright">
+                    Echo &copy; 2018. All rights reserved.
+                </p>
+            </footer>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
 </html>

@@ -1,0 +1,41 @@
+
+//Color Palette
+$color-primary: #ef9a9a;
+$color-primary-dark: #e57373;
+$color-secondary: #FDF2B9;
+$color-text-light: #FDF3F3;
+$color-text-dark: #ffd7d7;
+
+//Breakpoints
+
+
+//Default settings
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+canvas{
+  border-bottom: solid 1px #000;
+}

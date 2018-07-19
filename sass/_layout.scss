@@ -1,0 +1,71 @@
+.bg{
+  background-image: linear-gradient(to right bottom, rgba(255, 80, 70, 0.53),rgba(255, 128, 130, 0.57) );
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 10vh;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.player{
+  position: absolute;
+  z-index: 110;
+}
+
+
+.song{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
+
+}
+
+.container{
+  display: flex;
+  width: 95vw;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  align-items: center;
+  min-height: 65vh;
+  /*background-color: blue;*/
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  padding-right: 29rem;
+  padding-left: 29rem;
+
+}
+
+.footer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  min-height: 8vh;
+}
