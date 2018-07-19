@@ -34,12 +34,18 @@ canvas {
   display: flex;
   flex-direction: column;
   min-height: 10vh; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      min-height: 13vh; } }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 10vh; }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      height: 13vh; } }
 
 .head {
   display: flex;
@@ -58,6 +64,11 @@ canvas {
   align-items: center;
   text-align: center;
   margin-top: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .song {
+      min-height: 12vh;
+      margin-top: 3rem;
+      padding-top: 3rem; } }
 
 .container {
   display: flex;
@@ -72,6 +83,11 @@ canvas {
   z-index: 10;
   padding-right: 29rem;
   padding-left: 29rem; }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      width: 100vw;
+      overflow-x: hidden;
+      min-height: 54vh; } }
 
 .footer {
   display: flex;
@@ -136,7 +152,7 @@ canvas {
 .playing .play-sprite {
   background-position: 0 -70px; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 37.5em) {
   .container {
     padding-right: 0;
     padding-left: 0; }
@@ -161,7 +177,7 @@ canvas {
   .play-sprite {
     top: 50%;
     left: 52%;
-    margin: -29px 0 0 -86px;
+    margin: -29px 0 0 -87px;
     background-size: cover;
     height: 7vw;
     width: 7vw; }
