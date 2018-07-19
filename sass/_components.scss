@@ -109,6 +109,45 @@
   }
 }
 
+@media only screen and (max-width: $bp-smallest) {
+  .spinner-outer{
+    left: 62%;
+  }
+
+  .spinner-center{
+    left: 59%;
+    top: 88%;
+  }
+
+  .play-sprite{
+    margin: -24px 0 0 -79px;
+  }
+
+  .playing .play-sprite {
+    background-position: 0 -25px;
+  }
+
+}
+
+@media only screen and (max-width: $bp-smallest-1) {
+  .spinner-outer{
+    left: 76%;
+  }
+  .spinner-center{
+    left: 71%;
+    top: 93%;
+  }
+  .play-sprite{
+    margin: -21px 0 0 -63px;
+  }
+  .playing .play-sprite {
+    background-position: 0 -22px;
+  }
+}
+
+
+
+
 @keyframes spin-cw {
   from {
     transform: rotate(0deg);
