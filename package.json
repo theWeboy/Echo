@@ -2,7 +2,7 @@
   "name": "echo",
   "version": "1.0.0",
   "description": "Echo music player",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
