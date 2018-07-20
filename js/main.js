@@ -22,7 +22,20 @@ $(function () {
     canvas.width = $('.container').width();
     canvas.height = $('.container').height();
 
-    audioContext = new AudioContext();
+    //Check Browser Support
+    window.addEventListener('load', init, false);
+    function init() {
+        try {
+            // Fix up for prefixing
+            window.AudioContext = window.AudioContext||window.webkitAudioContext;
+            audioContext = new AudioContext();
+        }
+        catch(e) {
+            alert('Web Audio API is not supported in this browser');
+        }
+    }
+
+
 
     paused = true;
     var arr = $('.spinner-wrap').siblings('audio');
