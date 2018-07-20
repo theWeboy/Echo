@@ -17,7 +17,7 @@ $(function () {
     ];
 
 
-    var canvas,ctx,analyser;
+    var canvas,ctx,analyser,audioContext;
     canvas = document.getElementById("visualizer");
     canvas.width = $('.container').width();
     canvas.height = $('.container').height();
